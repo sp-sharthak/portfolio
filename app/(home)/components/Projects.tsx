@@ -5,6 +5,8 @@ import {
   SiReactquery,
   SiTailwindcss,
   SiBluetooth,
+  SiOpenai,
+  SiShadcnui,
 } from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
@@ -22,7 +24,7 @@ export default function Projects() {
     },
     {
       title: "Learning Pariyatti App",
-      tech: [SiReact, SiTailwindcss],
+      tech: [SiReact, SiTailwindcss, SiOpenai, SiShadcnui],
       link: "https://github.com/sp-sharthak",
       cover: "/ss.png", //path to image
       background: "bg-pink-500",

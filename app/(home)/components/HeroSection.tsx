@@ -12,11 +12,11 @@ export default function HeroSection() {
           Nice to meet you! 👋
           <br />
           <span className="underline underline-offset-8 decoration-green-500">
-            I'm Sharthak.
+            I'm Sharthak-sp.
           </span>
         </h1>
         <p className="md:w-96 text-lg text-primary-300">
-          Based in Nepal, I'm a Mobile application developer passionate about
+          Born in Nepal, I'm a Mobile application developer passionate about
           building a modern mobile applications that users love.
         </p>
         <Link
@@ -46,9 +46,16 @@ export default function HeroSection() {
           src="/pp.jpg"
         />
         <div className="absolute bottom-5 sm:bottom-14 left-0 sm:left-10">
-          {/* <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
-            <p>🚩 Available for work</p>
-          </MovingBorderBtn> */}
+          <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold ">
+            <Link
+              href={
+                "https://www.linkedin.com/in/sharthak-sharma-poudel-34288b165/"
+              }
+              className="inline-block group"
+            >
+              <Title text="Contact me 📩" />
+            </Link>
+          </MovingBorderBtn>
         </div>
       </div>
     </div>
