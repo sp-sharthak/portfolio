@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { ModeToggle } from "./components/DarkMode";
+import { Changelog } from "./components/Changelog";
 
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
       <div className="max-w-7xl mx-auto p-5 mt-20">
         <Skills />
         <Projects />
+        <Changelog />
         <Footer />
       </div>
     </div>

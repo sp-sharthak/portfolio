@@ -15,12 +15,15 @@ export default function HeroSection() {
             I'm Sharthak.
           </span>
         </h1>
-        <p className="md:w-96 text-lg text-gray-300">
+        <p className="md:w-96 text-lg text-primary-300">
           Based in Nepal, I'm a Mobile application developer passionate about
           building a modern mobile applications that users love.
         </p>
-        <Link href={"mailto:someone@gmail.com"} className="inline-block group">
-          <Title text="Contact me 📞" />
+        <Link
+          href={"mailto:s.s.poudel@outlook.com"}
+          className="inline-block group"
+        >
+          <Title text="Contact me 📩" />
         </Link>
       </div>
       <div className="relative">
@@ -37,10 +40,10 @@ export default function HeroSection() {
         </div> */}
         <Image
           alt="image"
-          className="h-full w-full object-cover scale-[1.15] rounded-md -rotate-45"
+          className="h-full w-full object-cover rounded-md"
           width="1000"
           height="1000"
-          src="/sp.png"
+          src="/pp.jpg"
         />
         <div className="absolute bottom-5 sm:bottom-14 left-0 sm:left-10">
           {/* <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">

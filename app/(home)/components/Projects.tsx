@@ -16,30 +16,16 @@ export default function Projects() {
     {
       title: "Learning Management App",
       tech: [SiNextdotjs, SiReactquery, SiTailwindcss, SiReact],
-      link: "",
+      link: "https://github.com/sp-sharthak/learning-management",
       cover: "/ss.png", //path to image
       background: "bg-cyan-500 ",
     },
     {
       title: "Learning Pariyatti App",
       tech: [SiReact, SiTailwindcss],
-      link: "",
+      link: "https://github.com/sp-sharthak",
       cover: "/ss.png", //path to image
       background: "bg-pink-500",
-    },
-    {
-      title: "Yatri Energy App",
-      tech: [SiReact, SiTailwindcss, SiBluetooth],
-      link: "",
-      cover: "/ss.png", //path to image
-      background: "bg-green-500",
-    },
-    {
-      title: "Yatri Hub App",
-      tech: [SiReact, SiTailwindcss, SiBluetooth],
-      link: "",
-      cover: "/ss.png", //path to image
-      background: "bg-indigo-500",
     },
   ];
   return (
