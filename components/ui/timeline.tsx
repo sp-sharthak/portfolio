@@ -5,8 +5,10 @@ import {
   useTransform,
   motion,
 } from "motion/react";
+import { Space_Grotesk } from "next/font/google";
 import React, { useEffect, useRef, useState } from "react";
 
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
@@ -34,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+      className={`w-full bg-white dark:bg-neutral-950 font-sans md:px-10 ${spaceGrotesk.className}`}
       ref={containerRef}
     >
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

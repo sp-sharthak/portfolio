@@ -4,9 +4,9 @@ import {
   SiReact,
   SiReactquery,
   SiTailwindcss,
-  SiBluetooth,
   SiOpenai,
   SiShadcnui,
+  SiExpress,
 } from "react-icons/si";
 import Title from "./Title";
 import Link from "next/link";
@@ -17,7 +17,14 @@ export default function Projects() {
   const projects = [
     {
       title: "Learning Management App",
-      tech: [SiNextdotjs, SiReactquery, SiTailwindcss, SiReact],
+      tech: [
+        SiNextdotjs,
+        SiReactquery,
+        SiTailwindcss,
+        SiReact,
+        SiShadcnui,
+        SiExpress,
+      ],
       link: "https://github.com/sp-sharthak/learning-management",
       cover: "/ss.png", //path to image
       background: "bg-cyan-500 ",
@@ -27,20 +34,20 @@ export default function Projects() {
       tech: [SiReact, SiTailwindcss, SiOpenai, SiShadcnui],
       link: "https://github.com/sp-sharthak",
       cover: "/ss.png", //path to image
-      background: "bg-pink-500",
+      background: "bg-green-500",
     },
   ];
   return (
     <div className="py-10 p-5 sm:p-0">
       <Title
-        text="Projects </>"
-        className="flex flex-col items-center justify-center rotate-6"
+        text="W.I.P. 2025"
+        className="flex flex-col items-center justify-center"
       />
       <div className="grid grid-cols-2 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
             <Link href={project.link} key={index}>
-              <div className={cn("p-5 rounded-md", project.background)}>
+              <div className={cn("p-2 md:p-5 rounded-md", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5 cursor-pointer"

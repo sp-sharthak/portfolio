@@ -3,7 +3,7 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import Title from "./Title";
 
-export function Changelog() {
+export default function Changelog() {
   const data = [
     {
       title: "2024",
@@ -35,8 +35,8 @@ export function Changelog() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
-          <br />
-          <div className="mb-8">
+
+          <div className="my-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Subscription.
             </div>
@@ -86,8 +86,8 @@ export function Changelog() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
-          <br />
-          <div className="mb-8">
+
+          <div className="my-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Deployed first Yatri's application to Apple store.
             </div>
@@ -140,8 +140,8 @@ export function Changelog() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
           </div>
-          <br />
-          <div className="mb-8">
+
+          <div className="my-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Deployed first Yatri's application to android store.
             </div>
@@ -166,20 +166,21 @@ export function Changelog() {
     },
   ];
   return (
-    <div className="w-full mt-40">
+    <div className="w-full mt-20">
       <Title
         text="Journey 🗓"
-        className="flex flex-col items-center justify-center rotate-6"
+        className="flex flex-col items-center justify-center "
       />
-      <div className="flex flex-col items-center max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+      <div className="flex flex-col items-center max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Journey to Leading insdustry
         </h2>
-        <p className="text-neutral-700 text-center  dark:text-neutral-300 text-sm md:text-base max-w-sm">
+        <p className="text-neutral-700 text-center dark:text-neutral-300 text-sm md:text-base max-w-sm">
           I&apos;ve been working around in the industry for the past 5 years.
           Here&apos;s a timeline of my journey.
         </p>
       </div>
+
       <Timeline data={data} />
     </div>
   );

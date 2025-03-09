@@ -1,8 +1,5 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { MovingBorderBtn } from "@/components/ui/moving-border";
-import Title from "./Title";
 
 export default function HeroSection() {
   return (
@@ -11,7 +8,7 @@ export default function HeroSection() {
         <h1 className="text-4xl lg:text-7xl font-bold ">
           Nice to meet you! 👋
           <br />
-          <span className="underline underline-offset-8 decoration-green-500">
+          <span className="underline underline-offset-8 decoration-cyan-500 dark:decoration-green-500">
             I'm Sharthak-sp.
           </span>
         </h1>
@@ -19,14 +16,9 @@ export default function HeroSection() {
           Born in Nepal, I'm a Mobile application developer passionate about
           building a modern mobile applications that users love.
         </p>
-        <Link
-          href={"mailto:s.s.poudel@outlook.com"}
-          className="inline-block group"
-        >
-          <Title text="Contact me 📩" />
-        </Link>
+        <br />
       </div>
-      <div className="relative">
+      <div>
         {/* <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative">
           <div className="flex gap-3 translate-x-8">
             <div className="w-32 h-32 rounded-2xl bg-green-500"></div>
@@ -45,18 +37,6 @@ export default function HeroSection() {
           height="1000"
           src="/pp.jpg"
         />
-        <div className="absolute bottom-5 sm:bottom-14 left-0 sm:left-10">
-          <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold ">
-            <Link
-              href={
-                "https://www.linkedin.com/in/sharthak-sharma-poudel-34288b165/"
-              }
-              className="inline-block group"
-            >
-              <Title text="Contact me 📩" />
-            </Link>
-          </MovingBorderBtn>
-        </div>
       </div>
     </div>
   );
